@@ -91,7 +91,7 @@ const deleteJob = async (req, res) => {
     throw new NotFoundError(`No job with id ${jobId}`);
   }
   // Respond with a success message
-  res.status(StatusCodes.OK).json({ msg: "Success! Job removed" });
+  res.status(StatusCodes.OK).json({ msg: "The entry was deleted." });
 };
 
 // Export all job controllers for use in routes
